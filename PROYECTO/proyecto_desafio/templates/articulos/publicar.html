@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+
+{% block contenido %}
+    <h2>Publicar Noticia</h2>
+    <form method = "post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Publicar Noticia</button>
+    </form>
+{% endblock contenido %}
+    

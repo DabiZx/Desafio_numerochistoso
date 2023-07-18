@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block contenido %}
+   <p>vas a eliminar el articulo</p>
+   <form method="post">
+
+    {% csrf_token %}
+
+    <button type="submit" class="btn btn-primary">Eliminar</button></a>
+   </form>
+
+{% endblock contenido %}
+    
