@@ -8,5 +8,7 @@ class CrearArticuloForm(forms.ModelForm):
         fields=[
             'titulo',
             'contenido',
+            'categoria'
+
 
         ]
